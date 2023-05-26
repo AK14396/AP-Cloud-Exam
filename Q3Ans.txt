@@ -1,0 +1,42 @@
+1.	Log in to the AWS Management Console at https://console.aws.amazon.com.
+
+2.	Go to the VPC service by searching for "VPC" in the search bar or navigating to the service directly.
+
+3.	Click on "Your VPCs" in the left navigation menu.
+
+4.	Click on the "Create VPC" button.
+
+5.	Provide the following details for your VPC:
+
+	=>Name tag: Enter a name for your VPC (e.g., MyVPC).
+	=>IPv4 CIDR block: Specify an IP range in CIDR notation for your VPC (e.g., 10.0.0.0/16).
+
+6.	Click on the "Create" button to create the VPC.
+
+7.	Once the VPC is created, go to the "Security Groups" section in the left navigation menu.
+
+8.	Click on the "Create Security Group" button.
+
+9.	Provide the following details for your security group:
+
+	=>Security group name: Enter a name for your security group (e.g., SSHOnlyGroup).
+	=>Description: Optionally, provide a description for your security group.
+
+10.	In the "Inbound Rules" section, add a rule to allow SSH access (port 22):
+
+	=>Type: Select "SSH" from the dropdown menu.
+	=>Source: Specify the IP range or specific IP address that should have SSH access. For example, you can use your public IP address (e.g., x.x.x.x/32) to restrict access to your current IP.
+
+11.	Leave the "Outbound Rules" section as the default (allow all outbound traffic).
+
+12.	Click on the "Create" button to create the security group.
+
+13.	Now, you need to associate the security group with your VPC:
+
+	=>In the "Security Groups" section, select the security group you just created.
+	=>In the "Actions" dropdown menu, click on "Edit Inbound Rules".
+	=>Add a rule to allow SSH access (port 22) again, with the same source IP range as in step 10.
+
+14.	Click on the "Save rules" button to associate the security group with your VPC and update the rules.
+
+Now you have a VPC with a security group that allows only SSH (port 22) access. You can launch instances within this VPC and associate them with this security group to restrict SSH access.
