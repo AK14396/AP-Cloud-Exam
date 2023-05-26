@@ -1,0 +1,21 @@
+1.	Log in to the AWS Management Console at https://console.aws.amazon.com.
+
+2.	Go to the EC2 service by searching for "EC2" in the search bar or navigating to the service directly.
+
+3.	Click on the "Launch Instance" button to start the instance creation wizard.
+
+4	Select an Amazon Machine Image (AMI) of your choice. This is the operating system and software configuration for your instance. Choose the one that suits your requirements and click "Select."
+
+5.	Choose an instance type based on your needs and click "Next."
+
+6.	Configure the instance details. In the "Network" section, select the VPC where you want to launch the instance. You can choose an existing VPC or create a new one. In the "Subnet" section, select a subnet within the chosen VPC. Make sure the subnet has a route to an internet gateway for the instance to have internet access. Scroll down to the "Auto-assign Public IP" setting and select "Enable" to assign a public IP to the instance.
+
+7.	Configure storage, tags, and any other advanced settings as required, and then click "Next."
+
+8.	Review your instance configuration and make any necessary changes. Once you're satisfied, click "Launch."
+
+9.	In the "Select an existing key pair or create a new key pair" dialog, choose an existing key pair or create a new one to securely connect to your instance.
+
+10.	Finally, click "Launch Instances" to create the EC2 instance with the public IP enabled.
+
+Once the instance is launched, it will be assigned a public IP address, which you can use to connect to the instance over the internet.
