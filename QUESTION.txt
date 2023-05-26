@@ -1,0 +1,3 @@
+1.create an amazon EC2 instance with public Ip enabled
+2.deploy a webserver and create a custom webpage to print your name.
+create vpc on AWS attach security group to this vpc which allow only ssh port
