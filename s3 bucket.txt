@@ -1,0 +1,26 @@
+CREATE BUCKET
+Bucket name---230340127049
+Aws Region--- asia Pacific(Mumbai)ap-south-1
+Object Ownership
+acl disable
+Block public access settings for this bucket
+unlock all public access
+create bucket
+select the bucket(name of bucket is there)
+object
+click on upload
+click on add files
+choose any files
+click on upload file
+click on close
+click on properties
+go to static website hosting(in the end) click on edit and make it enable
+index document--- (type)-index.html and click on save
+click on permission
+click on bucket policy and then click on edit
+click on add new statement
+edit--sid: "this website for demo purpose"
+      "principal":"*"
+      "resource":""("copy bucket arn and paste here then /*")
+add action chose s3 then choose all action  
+then click on object and select file and copy url and paste on new tab
